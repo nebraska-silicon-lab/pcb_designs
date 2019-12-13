@@ -51,8 +51,8 @@
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x010fc_ffffffff)
-      (usegerberextensions false)
+      (layerselection 0x010e0_ffffffff)
+      (usegerberextensions true)
       (usegerberattributes false)
       (usegerberadvancedattributes false)
       (creategerberjobfile false)
@@ -74,9 +74,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "gerbers/"))
   )
 
   (net 0 "")
@@ -1010,7 +1010,7 @@
   (segment (start 114.85 111.4) (end 119.25 115.8) (width 0.2) (layer F.Cu) (net 41) (tstamp 5D6615EE))
   (segment (start 110.25 111.4) (end 114.85 111.4) (width 0.2) (layer F.Cu) (net 41) (tstamp 5D6615F9))
 
-  (zone (net 1) (net_name /GND) (layer F.Cu) (tstamp 5D662405) (hatch edge 0.508)
+  (zone (net 1) (net_name /GND) (layer F.Cu) (tstamp 5DF3D468) (hatch edge 0.508)
     (connect_pads (clearance 0.254))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -1025,7 +1025,7 @@
       )
     )
   )
-  (zone (net 0) (net_name "") (layer F.Mask) (tstamp 0) (hatch edge 0.508)
+  (zone (net 0) (net_name "") (layer F.Mask) (tstamp 5DF3D465) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -1037,6 +1037,21 @@
     (filled_polygon
       (pts
         (xy 122.373 49.873) (xy 97.627 49.873) (xy 97.627 41.127) (xy 122.373 41.127)
+      )
+    )
+  )
+  (zone (net 0) (net_name "") (layer B.Cu) (tstamp 0) (hatch edge 0.508)
+    (connect_pads (clearance 0.254))
+    (min_thickness 0.254)
+    (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 124.4092 119.38) (xy 95.6056 119.38) (xy 95.6056 40.5892) (xy 124.4092 40.5892)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 124.2822 119.253) (xy 95.7326 119.253) (xy 95.7326 40.7162) (xy 124.2822 40.7162)
       )
     )
   )
