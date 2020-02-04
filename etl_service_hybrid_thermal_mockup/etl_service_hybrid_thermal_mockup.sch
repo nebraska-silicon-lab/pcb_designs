@@ -14,17 +14,17 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 950  1800 0    50   ~ 0
-Supply for 12 Full ETL Modules\nTotal Power: 4.53W per module x 12 = 54.4W\nModule Resistance: 100 Ohm
+Supply for 12 Full ETL Modules\nTotal Power: 4.53W per module x 12 = 54.4W\nModule Resistance: 47.78 Ohm
 Wire Wire Line
 	1550 3100 1550 3450
 Wire Wire Line
 	1550 3450 1900 3450
 Text Notes 800  2300 0    50   ~ 0
-Full Series Values\nR = 1.2k\nI = 213 mA\nV = 255V
+Full Series Values\nI = 307 mA\nV = 176V
 Text Notes 1650 2300 0    50   ~ 0
-Half Series Values\nR = 0.6k x2\nI = 426 mA\nV = 128V
+Half Series Values\nI = 615 mA\nV = 88V
 Text Notes 2500 2300 0    50   Italic 0
-Quarter Series Values\nR = 0.3k x4\nI = 852 mA\nV = 64V
+Quarter Series Values\nI = 1.23 A\nV = 44V
 Wire Wire Line
 	1900 3550 1800 3550
 Wire Wire Line
@@ -138,9 +138,9 @@ L Device:R R1
 U 1 1 5E3548AF
 P 4600 2400
 F 0 "R1" V 4500 2400 50  0000 C CNN
-F 1 "226" V 4600 2400 50  0000 C CNN
+F 1 "91" V 4600 2400 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4530 2400 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 4600 2400 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 4600 2400 50  0001 C CNN
 	1    4600 2400
 	0    1    1    0   
 $EndComp
@@ -171,7 +171,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 2900 5300 2900
 Text Notes 4400 2200 0    50   ~ 0
-Total Service Hybrid Power: 18W\nEach Resistor Group Emits 3W\nTuned to run at ~~64W
+Total Service Hybrid Power: 18W\nEach Resistor Group Emits 3.6W\nTuned to run at ~~44V
 Wire Wire Line
 	5300 3100 5150 3100
 Wire Wire Line
@@ -313,9 +313,9 @@ L Device:R R19
 U 1 1 5E3A8602
 P 5000 2400
 F 0 "R19" V 4900 2400 50  0000 C CNN
-F 1 "226" V 5000 2400 50  0000 C CNN
+F 1 "91" V 5000 2400 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4930 2400 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 5000 2400 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 5000 2400 50  0001 C CNN
 	1    5000 2400
 	0    1    1    0   
 $EndComp
@@ -324,9 +324,9 @@ L Device:R R20
 U 1 1 5E3A89FC
 P 5000 2600
 F 0 "R20" V 4900 2600 50  0000 C CNN
-F 1 "226" V 5000 2600 50  0000 C CNN
+F 1 "91" V 5000 2600 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4930 2600 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 5000 2600 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 5000 2600 50  0001 C CNN
 	1    5000 2600
 	0    1    1    0   
 $EndComp
@@ -335,9 +335,9 @@ L Device:R R2
 U 1 1 5E3A8DBE
 P 4600 2600
 F 0 "R2" V 4500 2600 50  0000 C CNN
-F 1 "226" V 4600 2600 50  0000 C CNN
+F 1 "91" V 4600 2600 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4530 2600 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 4600 2600 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 4600 2600 50  0001 C CNN
 	1    4600 2600
 	0    1    1    0   
 $EndComp
@@ -346,9 +346,9 @@ L Device:R R3
 U 1 1 5E3A91B6
 P 4600 2800
 F 0 "R3" V 4500 2800 50  0000 C CNN
-F 1 "226" V 4600 2800 50  0000 C CNN
+F 1 "91" V 4600 2800 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4530 2800 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 4600 2800 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 4600 2800 50  0001 C CNN
 	1    4600 2800
 	0    1    1    0   
 $EndComp
@@ -357,9 +357,9 @@ L Device:R R21
 U 1 1 5E3A95CF
 P 5000 2800
 F 0 "R21" V 4900 2800 50  0000 C CNN
-F 1 "226" V 5000 2800 50  0000 C CNN
+F 1 "91" V 5000 2800 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4930 2800 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 5000 2800 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 5000 2800 50  0001 C CNN
 	1    5000 2800
 	0    1    1    0   
 $EndComp
@@ -368,9 +368,9 @@ L Device:R R4
 U 1 1 5E3AFFBE
 P 4600 3100
 F 0 "R4" V 4500 3100 50  0000 C CNN
-F 1 "226" V 4600 3100 50  0000 C CNN
+F 1 "91" V 4600 3100 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4530 3100 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 4600 3100 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 4600 3100 50  0001 C CNN
 	1    4600 3100
 	0    1    1    0   
 $EndComp
@@ -379,9 +379,9 @@ L Device:R R22
 U 1 1 5E3AFFC7
 P 5000 3100
 F 0 "R22" V 4900 3100 50  0000 C CNN
-F 1 "226" V 5000 3100 50  0000 C CNN
+F 1 "91" V 5000 3100 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4930 3100 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 5000 3100 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 5000 3100 50  0001 C CNN
 	1    5000 3100
 	0    1    1    0   
 $EndComp
@@ -390,9 +390,9 @@ L Device:R R23
 U 1 1 5E3AFFCD
 P 5000 3300
 F 0 "R23" V 4900 3300 50  0000 C CNN
-F 1 "226" V 5000 3300 50  0000 C CNN
+F 1 "91" V 5000 3300 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4930 3300 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 5000 3300 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 5000 3300 50  0001 C CNN
 	1    5000 3300
 	0    1    1    0   
 $EndComp
@@ -401,9 +401,9 @@ L Device:R R5
 U 1 1 5E3AFFD3
 P 4600 3300
 F 0 "R5" V 4500 3300 50  0000 C CNN
-F 1 "226" V 4600 3300 50  0000 C CNN
+F 1 "91" V 4600 3300 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4530 3300 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 4600 3300 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 4600 3300 50  0001 C CNN
 	1    4600 3300
 	0    1    1    0   
 $EndComp
@@ -412,9 +412,9 @@ L Device:R R6
 U 1 1 5E3AFFD9
 P 4600 3500
 F 0 "R6" V 4500 3500 50  0000 C CNN
-F 1 "226" V 4600 3500 50  0000 C CNN
+F 1 "91" V 4600 3500 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4530 3500 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 4600 3500 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 4600 3500 50  0001 C CNN
 	1    4600 3500
 	0    1    1    0   
 $EndComp
@@ -423,9 +423,9 @@ L Device:R R24
 U 1 1 5E3AFFDF
 P 5000 3500
 F 0 "R24" V 4900 3500 50  0000 C CNN
-F 1 "226" V 5000 3500 50  0000 C CNN
+F 1 "91" V 5000 3500 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4930 3500 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 5000 3500 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 5000 3500 50  0001 C CNN
 	1    5000 3500
 	0    1    1    0   
 $EndComp
@@ -434,9 +434,9 @@ L Device:R R7
 U 1 1 5E3B4B5B
 P 4600 3800
 F 0 "R7" V 4500 3800 50  0000 C CNN
-F 1 "226" V 4600 3800 50  0000 C CNN
+F 1 "91" V 4600 3800 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4530 3800 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 4600 3800 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 4600 3800 50  0001 C CNN
 	1    4600 3800
 	0    1    1    0   
 $EndComp
@@ -445,9 +445,9 @@ L Device:R R25
 U 1 1 5E3B4B64
 P 5000 3800
 F 0 "R25" V 4900 3800 50  0000 C CNN
-F 1 "226" V 5000 3800 50  0000 C CNN
+F 1 "91" V 5000 3800 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4930 3800 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 5000 3800 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 5000 3800 50  0001 C CNN
 	1    5000 3800
 	0    1    1    0   
 $EndComp
@@ -456,9 +456,9 @@ L Device:R R26
 U 1 1 5E3B4B6A
 P 5000 4000
 F 0 "R26" V 4900 4000 50  0000 C CNN
-F 1 "226" V 5000 4000 50  0000 C CNN
+F 1 "91" V 5000 4000 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4930 4000 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 5000 4000 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 5000 4000 50  0001 C CNN
 	1    5000 4000
 	0    1    1    0   
 $EndComp
@@ -467,9 +467,9 @@ L Device:R R8
 U 1 1 5E3B4B70
 P 4600 4000
 F 0 "R8" V 4500 4000 50  0000 C CNN
-F 1 "226" V 4600 4000 50  0000 C CNN
+F 1 "91" V 4600 4000 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4530 4000 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 4600 4000 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 4600 4000 50  0001 C CNN
 	1    4600 4000
 	0    1    1    0   
 $EndComp
@@ -478,9 +478,9 @@ L Device:R R9
 U 1 1 5E3B4B76
 P 4600 4200
 F 0 "R9" V 4500 4200 50  0000 C CNN
-F 1 "226" V 4600 4200 50  0000 C CNN
+F 1 "91" V 4600 4200 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4530 4200 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 4600 4200 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 4600 4200 50  0001 C CNN
 	1    4600 4200
 	0    1    1    0   
 $EndComp
@@ -489,9 +489,9 @@ L Device:R R27
 U 1 1 5E3B4B7C
 P 5000 4200
 F 0 "R27" V 4900 4200 50  0000 C CNN
-F 1 "226" V 5000 4200 50  0000 C CNN
+F 1 "91" V 5000 4200 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4930 4200 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 5000 4200 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 5000 4200 50  0001 C CNN
 	1    5000 4200
 	0    1    1    0   
 $EndComp
@@ -500,9 +500,9 @@ L Device:R R10
 U 1 1 5E3BA52F
 P 4600 4550
 F 0 "R10" V 4500 4550 50  0000 C CNN
-F 1 "226" V 4600 4550 50  0000 C CNN
+F 1 "91" V 4600 4550 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4530 4550 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 4600 4550 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 4600 4550 50  0001 C CNN
 	1    4600 4550
 	0    1    1    0   
 $EndComp
@@ -511,9 +511,9 @@ L Device:R R28
 U 1 1 5E3BA538
 P 5000 4550
 F 0 "R28" V 4900 4550 50  0000 C CNN
-F 1 "226" V 5000 4550 50  0000 C CNN
+F 1 "91" V 5000 4550 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4930 4550 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 5000 4550 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 5000 4550 50  0001 C CNN
 	1    5000 4550
 	0    1    1    0   
 $EndComp
@@ -522,9 +522,9 @@ L Device:R R29
 U 1 1 5E3BA53E
 P 5000 4750
 F 0 "R29" V 4900 4750 50  0000 C CNN
-F 1 "226" V 5000 4750 50  0000 C CNN
+F 1 "91" V 5000 4750 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4930 4750 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 5000 4750 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 5000 4750 50  0001 C CNN
 	1    5000 4750
 	0    1    1    0   
 $EndComp
@@ -533,9 +533,9 @@ L Device:R R11
 U 1 1 5E3BA544
 P 4600 4750
 F 0 "R11" V 4500 4750 50  0000 C CNN
-F 1 "226" V 4600 4750 50  0000 C CNN
+F 1 "91" V 4600 4750 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4530 4750 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 4600 4750 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 4600 4750 50  0001 C CNN
 	1    4600 4750
 	0    1    1    0   
 $EndComp
@@ -544,9 +544,9 @@ L Device:R R12
 U 1 1 5E3BA54A
 P 4600 4950
 F 0 "R12" V 4500 4950 50  0000 C CNN
-F 1 "226" V 4600 4950 50  0000 C CNN
+F 1 "91" V 4600 4950 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4530 4950 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 4600 4950 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 4600 4950 50  0001 C CNN
 	1    4600 4950
 	0    1    1    0   
 $EndComp
@@ -555,9 +555,9 @@ L Device:R R30
 U 1 1 5E3BA550
 P 5000 4950
 F 0 "R30" V 4900 4950 50  0000 C CNN
-F 1 "226" V 5000 4950 50  0000 C CNN
+F 1 "91" V 5000 4950 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4930 4950 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 5000 4950 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 5000 4950 50  0001 C CNN
 	1    5000 4950
 	0    1    1    0   
 $EndComp
@@ -566,9 +566,9 @@ L Device:R R13
 U 1 1 5E3BEF40
 P 4600 5250
 F 0 "R13" V 4500 5250 50  0000 C CNN
-F 1 "226" V 4600 5250 50  0000 C CNN
+F 1 "91" V 4600 5250 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4530 5250 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 4600 5250 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 4600 5250 50  0001 C CNN
 	1    4600 5250
 	0    1    1    0   
 $EndComp
@@ -577,9 +577,9 @@ L Device:R R31
 U 1 1 5E3BEF49
 P 5000 5250
 F 0 "R31" V 4900 5250 50  0000 C CNN
-F 1 "226" V 5000 5250 50  0000 C CNN
+F 1 "91" V 5000 5250 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4930 5250 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 5000 5250 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 5000 5250 50  0001 C CNN
 	1    5000 5250
 	0    1    1    0   
 $EndComp
@@ -588,9 +588,9 @@ L Device:R R32
 U 1 1 5E3BEF4F
 P 5000 5450
 F 0 "R32" V 4900 5450 50  0000 C CNN
-F 1 "226" V 5000 5450 50  0000 C CNN
+F 1 "91" V 5000 5450 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4930 5450 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 5000 5450 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 5000 5450 50  0001 C CNN
 	1    5000 5450
 	0    1    1    0   
 $EndComp
@@ -599,9 +599,9 @@ L Device:R R14
 U 1 1 5E3BEF55
 P 4600 5450
 F 0 "R14" V 4500 5450 50  0000 C CNN
-F 1 "226" V 4600 5450 50  0000 C CNN
+F 1 "91" V 4600 5450 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4530 5450 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 4600 5450 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 4600 5450 50  0001 C CNN
 	1    4600 5450
 	0    1    1    0   
 $EndComp
@@ -610,9 +610,9 @@ L Device:R R15
 U 1 1 5E3BEF5B
 P 4600 5650
 F 0 "R15" V 4500 5650 50  0000 C CNN
-F 1 "226" V 4600 5650 50  0000 C CNN
+F 1 "91" V 4600 5650 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4530 5650 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 4600 5650 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 4600 5650 50  0001 C CNN
 	1    4600 5650
 	0    1    1    0   
 $EndComp
@@ -621,9 +621,9 @@ L Device:R R33
 U 1 1 5E3BEF61
 P 5000 5650
 F 0 "R33" V 4900 5650 50  0000 C CNN
-F 1 "226" V 5000 5650 50  0000 C CNN
+F 1 "91" V 5000 5650 50  0000 C CNN
 F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4930 5650 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TNF2260U/PT226AFCT-ND/956099" H 5000 5650 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-1TYJ910U/PT91XCT-ND/365445" H 5000 5650 50  0001 C CNN
 	1    5000 5650
 	0    1    1    0   
 $EndComp
