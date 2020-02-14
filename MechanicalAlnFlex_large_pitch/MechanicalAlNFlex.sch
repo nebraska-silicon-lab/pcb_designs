@@ -24,35 +24,35 @@ F 3 "~" H 3550 5000 50  0001 C CNN
 	1    3550 5000
 	0    1    -1   0   
 $EndComp
-Text Label 2550 450  2    50   ~ 0
+Text Label 2550 1850 2    50   ~ 0
 P1
-Text Label 2550 550  2    50   ~ 0
+Text Label 2550 1750 2    50   ~ 0
 P2
-Text Label 2550 650  2    50   ~ 0
+Text Label 2550 1650 2    50   ~ 0
 P3
-Text Label 2550 750  2    50   ~ 0
+Text Label 2550 1550 2    50   ~ 0
 P4
-Text Label 2550 850  2    50   ~ 0
+Text Label 2550 1450 2    50   ~ 0
 P5
-Text Label 2550 950  2    50   ~ 0
+Text Label 2550 1350 2    50   ~ 0
 P6
-Text Label 2550 1050 2    50   ~ 0
+Text Label 2550 1250 2    50   ~ 0
 P7
 Text Label 2550 1150 2    50   ~ 0
 P8
-Text Label 2550 1250 2    50   ~ 0
+Text Label 2550 1050 2    50   ~ 0
 P9
-Text Label 2550 1350 2    50   ~ 0
+Text Label 2550 950  2    50   ~ 0
 P10
-Text Label 2550 1450 2    50   ~ 0
+Text Label 2550 850  2    50   ~ 0
 P11
-Text Label 2550 1550 2    50   ~ 0
+Text Label 2550 750  2    50   ~ 0
 P12
-Text Label 2550 1650 2    50   ~ 0
+Text Label 2550 650  2    50   ~ 0
 P13
-Text Label 2550 1750 2    50   ~ 0
+Text Label 2550 550  2    50   ~ 0
 P14
-Text Label 2550 1850 2    50   ~ 0
+Text Label 2550 450  2    50   ~ 0
 P15
 Text Label 2550 1950 2    50   ~ 0
 P16
@@ -290,7 +290,7 @@ U 1 1 5E47623D
 P 2750 2150
 F 0 "J2" H 2800 4067 50  0000 C CNN
 F 1 "Conn_02x35_Top_Bottom" H 2800 3976 50  0000 C CNN
-F 2 "unl_silab:ETROC_70pad_61x126um_110um_pitch" H 2750 2150 50  0001 C CNN
+F 2 "unl_silab:ETROC_70pad_100x150um_200um_pitch" H 2750 2150 50  0001 C CNN
 F 3 "~" H 2750 2150 50  0001 C CNN
 	1    2750 2150
 	1    0    0    -1  
@@ -347,7 +347,7 @@ U 1 1 5E48550C
 P 3950 2150
 F 0 "J3" H 4000 4067 50  0000 C CNN
 F 1 "Conn_02x35_Top_Bottom" H 4000 3976 50  0000 C CNN
-F 2 "unl_silab:ETROC_70pad_61x126um_110um_pitch" H 3950 2150 50  0001 C CNN
+F 2 "unl_silab:ETROC_70pad_100x150um_200um_pitch" H 3950 2150 50  0001 C CNN
 F 3 "~" H 3950 2150 50  0001 C CNN
 	1    3950 2150
 	1    0    0    -1  

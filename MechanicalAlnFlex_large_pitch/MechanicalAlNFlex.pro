@@ -1,4 +1,4 @@
-update=Thu 13 Feb 2020 04:50:47 PM CST
+update=Fri 14 Feb 2020 02:44:42 PM CST
 version=1
 last_client=kicad
 [general]
@@ -32,13 +32,13 @@ AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.05
+MinTrackWidth=0.09999999999999999
 MinViaDiameter=0.5
 MinViaDrill=0.2
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.45
-TrackWidth1=0.061
+TrackWidth1=0.1
 ViaDiameter1=0.6
 ViaDrill1=0.3
 dPairWidth1=0.2
@@ -237,8 +237,8 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.04
-TrackWidth=0.061
+Clearance=0.09
+TrackWidth=0.1
 ViaDiameter=0.6
 ViaDrill=0.3
 uViaDiameter=0.3
