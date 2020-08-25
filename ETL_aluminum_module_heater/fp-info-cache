@@ -1,4 +1,4 @@
-18645974144682088
+18642778077849148
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -51498,20 +51498,6 @@ Fuse Fuseholder TR5 Littelfuse/Wickmann No. 460 No560
 0
 2
 2
-HPK_asic_4x24_wider
-ETROC16X16
-
-
-0
-196
-196
-HPK_asic_4x24_wider
-SMD1,27-2,54
-<b>SMD PAD</b>
-
-0
-1
-1
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35
@@ -82100,8 +82086,8 @@ ROC1_sans_wirebonds
 
 
 0
-0
-0
+100
+100
 unl_silab
 coupon_single_side
 
