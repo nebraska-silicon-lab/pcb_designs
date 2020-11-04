@@ -472,4 +472,17 @@ Wire Wire Line
 	4850 4200 4850 3900
 Text Label 5100 1650 0    50   ~ 0
 VCC
+$Comp
+L Device:Thermistor TH1
+U 1 1 5F484560
+P 5650 3050
+F 0 "TH1" H 5755 3096 50  0000 L CNN
+F 1 "Thermistor" H 5755 3005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5650 3050 50  0001 C CNN
+F 3 "~" H 5650 3050 50  0001 C CNN
+	1    5650 3050
+	1    0    0    -1  
+$EndComp
+Text Notes -600 2450 0    50   ~ 0
+PCB dimensions:\n45.850\n41.700
 $EndSCHEMATC
