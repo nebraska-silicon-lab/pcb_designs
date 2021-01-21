@@ -14,6 +14,8 @@ _autosave-*
 *-rescue.lib
 *-save.pro
 *-save.kicad_pcb
+fab_outputs/
+fab_outputs.zip
 
 # Netlist files (exported from Eeschema)
 *.net

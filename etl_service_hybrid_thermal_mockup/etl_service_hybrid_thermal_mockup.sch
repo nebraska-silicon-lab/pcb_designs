@@ -59,13 +59,13 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x02_Male J1
 U 1 1 5E3120FB
-P 1000 3450
-F 0 "J1" H 973 3378 50  0000 R CNN
-F 1 "Conn_01x02_Male" V 1153 3494 50  0001 L CNN
-F 2 "unl_silab:GEC02SBSN-M89" H 1000 3450 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/molex/0878580002/WM14721-ND/3264868" H 1000 3450 50  0001 C CNN
-	1    1000 3450
-	1    0    0    -1  
+P 1000 3550
+F 0 "J1" H 973 3478 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 1153 3594 50  0001 L CNN
+F 2 "unl_silab:BM02B-SRSS-TB LFSN" H 1000 3550 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/926694" H 1000 3550 50  0001 C CNN
+	1    1000 3550
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	1200 4250 1450 4250
@@ -630,122 +630,124 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male J7
 U 1 1 5E30ABAA
-P 2100 3550
-F 0 "J7" H 2072 3478 50  0000 R CNN
-F 1 "Conn_01x02_Male" V 2253 3594 50  0001 L CNN
-F 2 "unl_silab:GEC02SBSN-M89" H 2100 3550 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/molex/0878580002/WM14721-ND/3264868" H 2100 3550 50  0001 C CNN
-	1    2100 3550
-	-1   0    0    1   
+P 2100 3450
+F 0 "J7" H 2072 3378 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 2253 3494 50  0001 L CNN
+F 2 "unl_silab:BM02B-SRSS-TB LFSN" H 2100 3450 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/926694" H 2100 3450 50  0001 C CNN
+	1    2100 3450
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 5E3CF6B4
-P 1000 3800
-F 0 "J2" H 973 3728 50  0000 R CNN
-F 1 "Conn_01x02_Male" V 1153 3844 50  0001 L CNN
-F 2 "unl_silab:GEC02SBSN-M89" H 1000 3800 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/molex/0878580002/WM14721-ND/3264868" H 1000 3800 50  0001 C CNN
-	1    1000 3800
-	1    0    0    -1  
+P 1000 3900
+F 0 "J2" H 973 3828 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 1153 3944 50  0001 L CNN
+F 2 "unl_silab:BM02B-SRSS-TB LFSN" H 1000 3900 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/926694" H 1000 3900 50  0001 C CNN
+	1    1000 3900
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J3
 U 1 1 5E3CFA2F
-P 1000 4150
-F 0 "J3" H 973 4078 50  0000 R CNN
-F 1 "Conn_01x02_Male" V 1153 4194 50  0001 L CNN
-F 2 "unl_silab:GEC02SBSN-M89" H 1000 4150 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/molex/0878580002/WM14721-ND/3264868" H 1000 4150 50  0001 C CNN
-	1    1000 4150
-	1    0    0    -1  
+P 1000 4250
+F 0 "J3" H 973 4178 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 1153 4294 50  0001 L CNN
+F 2 "unl_silab:BM02B-SRSS-TB LFSN" H 1000 4250 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/926694" H 1000 4250 50  0001 C CNN
+	1    1000 4250
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J4
 U 1 1 5E3D0D52
-P 1000 4500
-F 0 "J4" H 973 4428 50  0000 R CNN
-F 1 "Conn_01x02_Male" V 1153 4544 50  0001 L CNN
-F 2 "unl_silab:GEC02SBSN-M89" H 1000 4500 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/molex/0878580002/WM14721-ND/3264868" H 1000 4500 50  0001 C CNN
-	1    1000 4500
-	1    0    0    -1  
+P 1000 4600
+F 0 "J4" H 973 4528 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 1153 4644 50  0001 L CNN
+F 2 "unl_silab:BM02B-SRSS-TB LFSN" H 1000 4600 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/926694" H 1000 4600 50  0001 C CNN
+	1    1000 4600
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J5
 U 1 1 5E3D1136
-P 1000 4850
-F 0 "J5" H 973 4778 50  0000 R CNN
-F 1 "Conn_01x02_Male" V 1153 4894 50  0001 L CNN
-F 2 "unl_silab:GEC02SBSN-M89" H 1000 4850 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/molex/0878580002/WM14721-ND/3264868" H 1000 4850 50  0001 C CNN
-	1    1000 4850
-	1    0    0    -1  
+P 1000 4950
+F 0 "J5" H 973 4878 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 1153 4994 50  0001 L CNN
+F 2 "unl_silab:BM02B-SRSS-TB LFSN" H 1000 4950 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/926694" H 1000 4950 50  0001 C CNN
+	1    1000 4950
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J6
 U 1 1 5E3D155D
-P 1000 5200
-F 0 "J6" H 973 5128 50  0000 R CNN
-F 1 "Conn_01x02_Male" V 1153 5244 50  0001 L CNN
-F 2 "unl_silab:GEC02SBSN-M89" H 1000 5200 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/molex/0878580002/WM14721-ND/3264868" H 1000 5200 50  0001 C CNN
-	1    1000 5200
-	1    0    0    -1  
+P 1000 5300
+F 0 "J6" H 973 5228 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 1153 5344 50  0001 L CNN
+F 2 "unl_silab:BM02B-SRSS-TB LFSN" H 1000 5300 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/926694" H 1000 5300 50  0001 C CNN
+	1    1000 5300
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J8
 U 1 1 5E3D1962
-P 2100 3900
-F 0 "J8" H 2072 3828 50  0000 R CNN
-F 1 "Conn_01x02_Male" V 2253 3944 50  0001 L CNN
-F 2 "unl_silab:GEC02SBSN-M89" H 2100 3900 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/molex/0878580002/WM14721-ND/3264868" H 2100 3900 50  0001 C CNN
-	1    2100 3900
-	-1   0    0    1   
+P 2100 3800
+F 0 "J8" H 2072 3728 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 2253 3844 50  0001 L CNN
+F 2 "unl_silab:BM02B-SRSS-TB LFSN" H 2100 3800 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/926694" H 2100 3800 50  0001 C CNN
+	1    2100 3800
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J9
 U 1 1 5E3D1D7E
-P 2100 4250
-F 0 "J9" H 2072 4178 50  0000 R CNN
-F 1 "Conn_01x02_Male" V 2253 4294 50  0001 L CNN
-F 2 "unl_silab:GEC02SBSN-M89" H 2100 4250 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/molex/0878580002/WM14721-ND/3264868" H 2100 4250 50  0001 C CNN
-	1    2100 4250
-	-1   0    0    1   
+P 2100 4150
+F 0 "J9" H 2072 4078 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 2253 4194 50  0001 L CNN
+F 2 "unl_silab:BM02B-SRSS-TB LFSN" H 2100 4150 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/926694" H 2100 4150 50  0001 C CNN
+	1    2100 4150
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J10
 U 1 1 5E3D309A
-P 2100 4600
-F 0 "J10" H 2072 4528 50  0000 R CNN
-F 1 "Conn_01x02_Male" V 2253 4644 50  0001 L CNN
-F 2 "unl_silab:GEC02SBSN-M89" H 2100 4600 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/molex/0878580002/WM14721-ND/3264868" H 2100 4600 50  0001 C CNN
-	1    2100 4600
-	-1   0    0    1   
+P 2100 4500
+F 0 "J10" H 2072 4428 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 2253 4544 50  0001 L CNN
+F 2 "unl_silab:BM02B-SRSS-TB LFSN" H 2100 4500 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/926694" H 2100 4500 50  0001 C CNN
+	1    2100 4500
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J11
 U 1 1 5E3D47DE
-P 2100 4950
-F 0 "J11" H 2072 4878 50  0000 R CNN
-F 1 "Conn_01x02_Male" V 2253 4994 50  0001 L CNN
-F 2 "unl_silab:GEC02SBSN-M89" H 2100 4950 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/molex/0878580002/WM14721-ND/3264868" H 2100 4950 50  0001 C CNN
-	1    2100 4950
-	-1   0    0    1   
+P 2100 4850
+F 0 "J11" H 2072 4778 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 2253 4894 50  0001 L CNN
+F 2 "unl_silab:BM02B-SRSS-TB LFSN" H 2100 4850 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/926694" H 2100 4850 50  0001 C CNN
+	1    2100 4850
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J12
 U 1 1 5E3D4C8B
-P 2100 5300
-F 0 "J12" H 2072 5228 50  0000 R CNN
-F 1 "Conn_01x02_Male" V 2253 5344 50  0001 L CNN
-F 2 "unl_silab:GEC02SBSN-M89" H 2100 5300 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/molex/0878580002/WM14721-ND/3264868" H 2100 5300 50  0001 C CNN
-	1    2100 5300
-	-1   0    0    1   
+P 2100 5200
+F 0 "J12" H 2072 5128 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 2253 5244 50  0001 L CNN
+F 2 "unl_silab:BM02B-SRSS-TB LFSN" H 2100 5200 50  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/jst-sales-america-inc/BM02B-SRSS-TB-LF-SN/926694" H 2100 5200 50  0001 C CNN
+	1    2100 5200
+	-1   0    0    -1  
 $EndComp
+Text Notes 900  2900 0    50   ~ 0
+Connector Digipart: 455-1788-1-ND\nCable Digipart: 455-3001-ND
 $EndSCHEMATC
