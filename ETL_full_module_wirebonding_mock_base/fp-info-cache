@@ -1,4 +1,4 @@
-18642778427575776
+18645995338394765
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82047,6 +82047,13 @@ unl_silab
 40
 20
 unl_silab
+BM02B-SRSS-TB LFSN
+
+
+0
+4
+4
+unl_silab
 ETROC
 ETROC
 
@@ -82097,6 +82104,13 @@ coupon_single_side
 1
 unl_silab
 crossed_circle_fiducial
+
+
+0
+0
+0
+unl_silab
+etl_service_hybrid_mounting_holes
 
 
 0
