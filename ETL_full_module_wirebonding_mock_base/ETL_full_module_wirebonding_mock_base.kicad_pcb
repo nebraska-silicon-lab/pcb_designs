@@ -1,8 +1,8 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.6)-1")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.10)-1")
 
   (general
     (thickness 1.6)
-    (drawings 13)
+    (drawings 16)
     (tracks 0)
     (zones 0)
     (modules 12)
@@ -24,12 +24,12 @@
     (40 Dwgs.User user)
     (41 Cmts.User user)
     (42 Eco1.User user)
-    (43 Eco2.User user)
+    (43 Eco2.User user hide)
     (44 Edge.Cuts user)
-    (45 Margin user)
+    (45 Margin user hide)
     (46 B.CrtYd user hide)
-    (47 F.CrtYd user)
-    (48 B.Fab user)
+    (47 F.CrtYd user hide)
+    (48 B.Fab user hide)
     (49 F.Fab user hide)
   )
 
@@ -55,9 +55,9 @@
     (mod_edge_width 0.12)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 1.524 1.524)
-    (pad_drill 0.762)
-    (pad_to_mask_clearance 0.05)
+    (pad_size 2.5 2.5)
+    (pad_drill 2.5)
+    (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
@@ -101,8 +101,8 @@
   )
 
   (module unl_silab:crossed_circle_fiducial (layer F.Cu) (tedit 5DEEB95A) (tstamp 5FA4CBE0)
-    (at 52.5 37.6)
-    (fp_text reference REF** (at 0 0) (layer F.SilkS) hide
+    (at 190.12 115.76)
+    (fp_text reference REF** (at 0 0) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value crossed_circle_fiducial (at 0 0) (layer F.Fab) hide
@@ -115,8 +115,8 @@
   )
 
   (module unl_silab:crossed_circle_fiducial (layer F.Cu) (tedit 5DEEB95A) (tstamp 5FA4CBE0)
-    (at 4 37.6)
-    (fp_text reference REF** (at 0 0) (layer F.SilkS) hide
+    (at 135.62 115.76)
+    (fp_text reference REF** (at 0 0) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value crossed_circle_fiducial (at 0 0) (layer F.Fab) hide
@@ -129,8 +129,8 @@
   )
 
   (module unl_silab:crossed_circle_fiducial (layer F.Cu) (tedit 5DEEB95A) (tstamp 5FA4CB92)
-    (at 52.5 5.5)
-    (fp_text reference REF** (at 0 0) (layer F.SilkS) hide
+    (at 190.12 74.66)
+    (fp_text reference REF** (at 0 0) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value crossed_circle_fiducial (at 0 0) (layer F.Fab) hide
@@ -143,11 +143,11 @@
   )
 
   (module MountingHole:MountingHole_2.5mm (layer F.Cu) (tedit 56D1B4CB) (tstamp 5FA4C721)
-    (at 54 2.5)
+    (at 188.62 77.16)
     (descr "Mounting Hole 2.5mm, no annular")
     (tags "mounting hole 2.5mm no annular")
     (attr virtual)
-    (fp_text reference REF** (at 0 -3.5) (layer F.SilkS) hide
+    (fp_text reference REF** (at 0 -3.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole_2.5mm (at 0 3.5) (layer F.Fab)
@@ -162,11 +162,11 @@
   )
 
   (module MountingHole:MountingHole_2.5mm (layer F.Cu) (tedit 56D1B4CB) (tstamp 5FA4C721)
-    (at 54 40.6)
+    (at 188.62 113.26)
     (descr "Mounting Hole 2.5mm, no annular")
     (tags "mounting hole 2.5mm no annular")
     (attr virtual)
-    (fp_text reference REF** (at 0 -3.5) (layer F.SilkS) hide
+    (fp_text reference REF** (at 0 -3.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole_2.5mm (at 0 3.5) (layer F.Fab)
@@ -181,11 +181,11 @@
   )
 
   (module MountingHole:MountingHole_2.5mm (layer F.Cu) (tedit 56D1B4CB) (tstamp 5FA4C721)
-    (at 2.5 40.6)
+    (at 137.12 113.26)
     (descr "Mounting Hole 2.5mm, no annular")
     (tags "mounting hole 2.5mm no annular")
     (attr virtual)
-    (fp_text reference REF** (at 0 -3.5) (layer F.SilkS) hide
+    (fp_text reference REF** (at 0 -3.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole_2.5mm (at 0 3.5) (layer F.Fab)
@@ -200,11 +200,11 @@
   )
 
   (module MountingHole:MountingHole_2.5mm (layer F.Cu) (tedit 56D1B4CB) (tstamp 5FA4C6EC)
-    (at 2.5 2.5)
+    (at 137.12 77.16)
     (descr "Mounting Hole 2.5mm, no annular")
     (tags "mounting hole 2.5mm no annular")
     (attr virtual)
-    (fp_text reference REF** (at 0 -3.5) (layer F.SilkS) hide
+    (fp_text reference REF** (at 0 -3.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole_2.5mm (at 0 3.5) (layer F.Fab)
@@ -219,8 +219,8 @@
   )
 
   (module unl_silab:crossed_circle_fiducial (layer F.Cu) (tedit 5DEEB95A) (tstamp 5FA4C58C)
-    (at 4 5.5)
-    (fp_text reference REF** (at 0 0) (layer F.SilkS) hide
+    (at 135.62 74.66)
+    (fp_text reference REF** (at 0 0) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value crossed_circle_fiducial (at 0 0) (layer F.Fab) hide
@@ -233,8 +233,8 @@
   )
 
   (module unl_silab:ETROC_70pad_100x150um_200um_pitch (layer F.Cu) (tedit 5E45C4FB) (tstamp 5FA4C13F)
-    (at 53.9 36.85 90)
-    (fp_text reference ETROC** (at 0 0.5 90) (layer F.SilkS) hide
+    (at 188.52 110.51 90)
+    (fp_text reference ETROC** (at 0 0.5 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value ETROC_70pad_100x150um_200um_pitch (at 0 -0.5 90) (layer F.Fab) hide
@@ -313,8 +313,8 @@
   )
 
   (module unl_silab:ETROC_70pad_100x150um_200um_pitch (layer F.Cu) (tedit 5E45C4FB) (tstamp 5FA4C0F6)
-    (at 53.9 6.25 270)
-    (fp_text reference ETROC** (at 0 0.5 90) (layer F.SilkS) hide
+    (at 188.52 79.91 270)
+    (fp_text reference ETROC** (at 0 0.5 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value ETROC_70pad_100x150um_200um_pitch (at 0 -0.5 90) (layer F.Fab) hide
@@ -393,8 +393,8 @@
   )
 
   (module unl_silab:ETROC_70pad_100x150um_200um_pitch (layer F.Cu) (tedit 5E45C4FB) (tstamp 5FA4BC33)
-    (at 3.05 6.25 270)
-    (fp_text reference ETROC** (at 0 0.5 90) (layer F.SilkS) hide
+    (at 137.67 79.91 270)
+    (fp_text reference ETROC** (at 0 0.5 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value ETROC_70pad_100x150um_200um_pitch (at 0 -0.5 90) (layer F.Fab) hide
@@ -473,8 +473,8 @@
   )
 
   (module unl_silab:ETROC_70pad_100x150um_200um_pitch (layer F.Cu) (tedit 5E45C4FB) (tstamp 5FA4B8EC)
-    (at 3.05 36.85 90)
-    (fp_text reference ETROC** (at 0 0.5 90) (layer F.SilkS) hide
+    (at 137.67 110.51 90)
+    (fp_text reference ETROC** (at 0 0.5 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value ETROC_70pad_100x150um_200um_pitch (at 0 -0.5 90) (layer F.Fab) hide
@@ -552,73 +552,87 @@
     (pad 1 smd rect (at 0 0 90) (size 0.1 0.15) (layers F.Cu F.Mask))
   )
 
-  (dimension 47.6 (width 0.15) (layer Dwgs.User)
-    (gr_text "47.600 mm" (at 28.25 2.95) (layer Dwgs.User)
+  (gr_line (start 164.87 93.21) (end 160.87 97.21) (layer F.SilkS) (width 0.12) (tstamp 60AD5762))
+  (gr_line (start 160.87 93.21) (end 164.87 97.21) (layer F.SilkS) (width 0.12))
+  (dimension 5.5 (width 0.15) (layer Dwgs.User)
+    (gr_text "5.500 mm" (at 130.78 76.41 90) (layer Dwgs.User)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (feature1 (pts (xy 4.45 0.7) (xy 4.45 2.236421)))
-    (feature2 (pts (xy 52.05 0.7) (xy 52.05 2.236421)))
-    (crossbar (pts (xy 52.05 1.65) (xy 4.45 1.65)))
-    (arrow1a (pts (xy 4.45 1.65) (xy 5.576504 1.063579)))
-    (arrow1b (pts (xy 4.45 1.65) (xy 5.576504 2.236421)))
-    (arrow2a (pts (xy 52.05 1.65) (xy 50.923496 1.063579)))
-    (arrow2b (pts (xy 52.05 1.65) (xy 50.923496 2.236421)))
+    (feature1 (pts (xy 138.62 73.66) (xy 131.493579 73.66)))
+    (feature2 (pts (xy 138.62 79.16) (xy 131.493579 79.16)))
+    (crossbar (pts (xy 132.08 79.16) (xy 132.08 73.66)))
+    (arrow1a (pts (xy 132.08 73.66) (xy 132.666421 74.786504)))
+    (arrow1b (pts (xy 132.08 73.66) (xy 131.493579 74.786504)))
+    (arrow2a (pts (xy 132.08 79.16) (xy 132.666421 78.033496)))
+    (arrow2b (pts (xy 132.08 79.16) (xy 131.493579 78.033496)))
+  )
+  (dimension 4 (width 0.15) (layer Dwgs.User)
+    (gr_text "4.000 mm" (at 136.62 68.55) (layer Dwgs.User)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (feature1 (pts (xy 134.62 79.16) (xy 134.62 69.263579)))
+    (feature2 (pts (xy 138.62 79.16) (xy 138.62 69.263579)))
+    (crossbar (pts (xy 138.62 69.85) (xy 134.62 69.85)))
+    (arrow1a (pts (xy 134.62 69.85) (xy 135.746504 69.263579)))
+    (arrow1b (pts (xy 134.62 69.85) (xy 135.746504 70.436421)))
+    (arrow2a (pts (xy 138.62 69.85) (xy 137.493496 69.263579)))
+    (arrow2b (pts (xy 138.62 69.85) (xy 137.493496 70.436421)))
+  )
+  (dimension 47.6 (width 0.15) (layer Dwgs.User)
+    (gr_text "47.600 mm" (at 162.87 76.61) (layer Dwgs.User)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (feature1 (pts (xy 139.07 74.36) (xy 139.07 75.896421)))
+    (feature2 (pts (xy 186.67 74.36) (xy 186.67 75.896421)))
+    (crossbar (pts (xy 186.67 75.31) (xy 139.07 75.31)))
+    (arrow1a (pts (xy 139.07 75.31) (xy 140.196504 74.723579)))
+    (arrow1b (pts (xy 139.07 75.31) (xy 140.196504 75.896421)))
+    (arrow2a (pts (xy 186.67 75.31) (xy 185.543496 74.723579)))
+    (arrow2b (pts (xy 186.67 75.31) (xy 185.543496 75.896421)))
   )
   (dimension 41.7 (width 0.15) (layer Dwgs.User)
-    (gr_text "41.700 mm" (at 48.3 21.55 90) (layer Dwgs.User)
+    (gr_text "41.700 mm" (at 182.92 95.21 90) (layer Dwgs.User)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (feature1 (pts (xy 52.05 0.7) (xy 49.013579 0.7)))
-    (feature2 (pts (xy 52.05 42.4) (xy 49.013579 42.4)))
-    (crossbar (pts (xy 49.6 42.4) (xy 49.6 0.7)))
-    (arrow1a (pts (xy 49.6 0.7) (xy 50.186421 1.826504)))
-    (arrow1b (pts (xy 49.6 0.7) (xy 49.013579 1.826504)))
-    (arrow2a (pts (xy 49.6 42.4) (xy 50.186421 41.273496)))
-    (arrow2b (pts (xy 49.6 42.4) (xy 49.013579 41.273496)))
-  )
-  (dimension 1.85 (width 0.15) (layer Dwgs.User)
-    (gr_text "1.850 mm" (at 52.975 -6.7) (layer Dwgs.User)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (feature1 (pts (xy 52.05 6.25) (xy 52.05 -5.986421)))
-    (feature2 (pts (xy 53.9 6.25) (xy 53.9 -5.986421)))
-    (crossbar (pts (xy 53.9 -5.4) (xy 52.05 -5.4)))
-    (arrow1a (pts (xy 52.05 -5.4) (xy 53.176504 -5.986421)))
-    (arrow1b (pts (xy 52.05 -5.4) (xy 53.176504 -4.813579)))
-    (arrow2a (pts (xy 53.9 -5.4) (xy 52.773496 -5.986421)))
-    (arrow2b (pts (xy 53.9 -5.4) (xy 52.773496 -4.813579)))
+    (feature1 (pts (xy 186.67 74.36) (xy 183.633579 74.36)))
+    (feature2 (pts (xy 186.67 116.06) (xy 183.633579 116.06)))
+    (crossbar (pts (xy 184.22 116.06) (xy 184.22 74.36)))
+    (arrow1a (pts (xy 184.22 74.36) (xy 184.806421 75.486504)))
+    (arrow1b (pts (xy 184.22 74.36) (xy 183.633579 75.486504)))
+    (arrow2a (pts (xy 184.22 116.06) (xy 184.806421 114.933496)))
+    (arrow2b (pts (xy 184.22 116.06) (xy 183.633579 114.933496)))
   )
   (dimension 43.1 (width 0.15) (layer Dwgs.User)
-    (gr_text "43.100 mm" (at 59.55 21.55 270) (layer Dwgs.User)
+    (gr_text "43.100 mm" (at 194.17 95.21 270) (layer Dwgs.User)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (feature1 (pts (xy 56.5 43.1) (xy 58.836421 43.1)))
-    (feature2 (pts (xy 56.5 0) (xy 58.836421 0)))
-    (crossbar (pts (xy 58.25 0) (xy 58.25 43.1)))
-    (arrow1a (pts (xy 58.25 43.1) (xy 57.663579 41.973496)))
-    (arrow1b (pts (xy 58.25 43.1) (xy 58.836421 41.973496)))
-    (arrow2a (pts (xy 58.25 0) (xy 57.663579 1.126504)))
-    (arrow2b (pts (xy 58.25 0) (xy 58.836421 1.126504)))
+    (feature1 (pts (xy 191.12 116.76) (xy 193.456421 116.76)))
+    (feature2 (pts (xy 191.12 73.66) (xy 193.456421 73.66)))
+    (crossbar (pts (xy 192.87 73.66) (xy 192.87 116.76)))
+    (arrow1a (pts (xy 192.87 116.76) (xy 192.283579 115.633496)))
+    (arrow1b (pts (xy 192.87 116.76) (xy 193.456421 115.633496)))
+    (arrow2a (pts (xy 192.87 73.66) (xy 192.283579 74.786504)))
+    (arrow2b (pts (xy 192.87 73.66) (xy 193.456421 74.786504)))
   )
   (dimension 56.5 (width 0.15) (layer Dwgs.User)
-    (gr_text "56.500 mm" (at 28.25 -3.049999) (layer Dwgs.User)
+    (gr_text "56.500 mm" (at 162.87 70.610001) (layer Dwgs.User)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (feature1 (pts (xy 0 0) (xy 0 -2.33642)))
-    (feature2 (pts (xy 56.5 0) (xy 56.5 -2.33642)))
-    (crossbar (pts (xy 56.5 -1.749999) (xy 0 -1.749999)))
-    (arrow1a (pts (xy 0 -1.749999) (xy 1.126504 -2.33642)))
-    (arrow1b (pts (xy 0 -1.749999) (xy 1.126504 -1.163578)))
-    (arrow2a (pts (xy 56.5 -1.749999) (xy 55.373496 -2.33642)))
-    (arrow2b (pts (xy 56.5 -1.749999) (xy 55.373496 -1.163578)))
+    (feature1 (pts (xy 134.62 73.66) (xy 134.62 71.32358)))
+    (feature2 (pts (xy 191.12 73.66) (xy 191.12 71.32358)))
+    (crossbar (pts (xy 191.12 71.910001) (xy 134.62 71.910001)))
+    (arrow1a (pts (xy 134.62 71.910001) (xy 135.746504 71.32358)))
+    (arrow1b (pts (xy 134.62 71.910001) (xy 135.746504 72.496422)))
+    (arrow2a (pts (xy 191.12 71.910001) (xy 189.993496 71.32358)))
+    (arrow2b (pts (xy 191.12 71.910001) (xy 189.993496 72.496422)))
   )
-  (gr_line (start 4.45 0.7) (end 52.05 0.7) (layer F.SilkS) (width 0.15) (tstamp 5FA4BA1B))
-  (gr_line (start 52.05 0.7) (end 52.05 42.4) (layer F.SilkS) (width 0.15))
-  (gr_line (start 4.45 42.4) (end 52.05 42.4) (layer F.SilkS) (width 0.15))
-  (gr_line (start 4.45 0.7) (end 4.45 42.4) (layer F.SilkS) (width 0.15))
-  (gr_line (start 0 0) (end 56.5 0) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 56.5 0) (end 56.5 43.1) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 0 43.1) (end 56.5 43.1) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 0 0) (end 0 43.1) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 139.07 74.36) (end 186.67 74.36) (layer F.SilkS) (width 0.15) (tstamp 5FA4BA1B))
+  (gr_line (start 186.67 74.36) (end 186.67 116.06) (layer F.SilkS) (width 0.15))
+  (gr_line (start 139.07 116.06) (end 186.67 116.06) (layer F.SilkS) (width 0.15))
+  (gr_line (start 139.07 74.36) (end 139.07 116.06) (layer F.SilkS) (width 0.15))
+  (gr_line (start 134.62 73.66) (end 191.12 73.66) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 191.12 73.66) (end 191.12 116.76) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 134.62 116.76) (end 191.12 116.76) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 134.62 73.66) (end 134.62 116.76) (layer Edge.Cuts) (width 0.05))
 
 )
