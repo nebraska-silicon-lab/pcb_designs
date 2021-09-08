@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name HPK_asic_4x24_wider)(type KiCad)(uri "$(KIPRJMOD)/HPK_asic_4x24_wider.pretty")(options "")(descr ""))
+)

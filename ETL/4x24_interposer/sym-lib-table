@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name HPK_asic_4x24_wider-eagle-import)(type Legacy)(uri ${KIPRJMOD}/HPK_asic_4x24_wider-eagle-import.lib)(options "")(descr ""))
+)

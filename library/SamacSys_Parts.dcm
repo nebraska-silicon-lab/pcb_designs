@@ -66,4 +66,10 @@ K
 F https://componentsearchengine.com/Datasheets/1/95278-501A10LF.pdf
 $ENDCMP
 #
+$CMP WP7B-S050VA1-R8000
+D CONN RCPT 0.4MM 50POS DUAL SMD
+K
+F https://www.jae.com/z-en/product_en.cfm?l_code=EN&series_code=WP7&product_number=WP7B-S050VA1-R8000
+$ENDCMP
+#
 #End Doc Library
