@@ -1,4 +1,4 @@
-19255070435941591
+19259968329550045
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -76362,6 +76362,13 @@ Connector
 0
 54
 54
+SamacSys_Parts
+WP7BS050VA1R8000
+WP7B-S050VA1-R8000-1
+Connector
+0
+54
+54
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf
@@ -83160,6 +83167,13 @@ GEC02SBSN-M89
 2
 2
 unl_silab
+Keystone-5084-Test-Point
+
+
+0
+1
+1
+unl_silab
 NLOGO
 
 
@@ -83180,6 +83194,13 @@ TFPX_stencil_UNL_pattern
 0
 223
 0
+unl_silab
+TestPoint_Pad_D3.0mm
+SMD pad as test Point, diameter 3.0mm
+test point SMD pad
+0
+1
+1
 unl_silab
 coupon_single_side
 
