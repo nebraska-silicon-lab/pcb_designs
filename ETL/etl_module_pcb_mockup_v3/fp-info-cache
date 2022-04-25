@@ -1,4 +1,4 @@
-19261600848226590
+19264899834094498
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83223,6 +83223,13 @@ crossed_circle_fiducial
 0
 0
 unl_silab
+etl_module_pcb_wirebond_staggered_v1
+
+
+0
+142
+142
+unl_silab
 etl_service_hybrid_mounting_holes
 
 
@@ -83236,3 +83243,10 @@ etroc_mockup_wirebond_pads
 0
 47
 47
+unl_silab
+vacuum_clearance_hole
+
+
+0
+0
+0
