@@ -30,4 +30,5 @@ fab_outputs.zip
 
 # Python virtual environments
 env/
+venv/
 .ipynb_checkpoints/
