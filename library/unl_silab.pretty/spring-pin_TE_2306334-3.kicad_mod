@@ -1,0 +1,14 @@
+(module spring-pin_TE_2306334-3 (layer F.Cu) (tedit 62D1AA77)
+  (fp_text reference REF** (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value spring-pin_TE_2306334-3 (at 0 0) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 smd rect (at 0 0) (size 1.74 0.84) (layers F.Cu F.Paste F.Mask))
+  (model "${KIPRJMOD}/spring-finger c-2306334-3-a-3d.stp"
+    (offset (xyz -1 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 90))
+  )
+)

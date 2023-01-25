@@ -1,0 +1,14 @@
+(module SMT_Nut_SMTSO-080-2ET (layer F.Cu) (tedit 62E04BE5)
+  (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value SMT_Nut_SMTSO-080-2ET (at 0 -0.5) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad "" np_thru_hole circle (at 0 0) (size 4.2 4.2) (drill 2.29) (layers F.Cu F.Mask))
+  (model ${KIPRJMOD}/SMTSO-080-2ET-PennEngineering-3D-07-26-2022.stp
+    (offset (xyz 0 0 -0.48))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 -90 0))
+  )
+)
