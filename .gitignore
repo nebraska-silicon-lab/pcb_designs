@@ -34,3 +34,6 @@ fab_outputs.zip
 env/
 venv/
 .ipynb_checkpoints/
+
+# Zip file archives
+*.zip

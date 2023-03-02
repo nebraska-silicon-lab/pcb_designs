@@ -1,4 +1,4 @@
-20939256944785812
+20989147758432507
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -1945,6 +1945,13 @@ switch SPDT
 0
 7
 3
+Button_Switch_THT
+SW_E-Switch_EG1271_DPDT
+E-Switch sub miniature slide switch, EG series, DPDT, http://spec_sheets.e-switch.com/specs/P040047.pdf
+switch DPDT
+0
+6
+6
 Button_Switch_THT
 SW_E-Switch_EG1271_SPDT
 E-Switch sub miniature slide switch, EG series, SPDT, http://spec_sheets.e-switch.com/specs/P040047.pdf
@@ -54607,6 +54614,13 @@ Inductor inductor mwsa-s
 2
 2
 Inductor_SMD
+L_Sunlord_MWSA0518_5.4x5.2mm
+Inductor, Sunlord, MWSA0518, 5.4mmx5.2mm
+inductor Sunlord smd
+0
+2
+2
+Inductor_SMD
 L_Sunlord_MWSA1003S
 Inductor, Sunlord, MWSA1003S, 11.5mmx10.0mm, https://sunlordinc.com/Download.aspx?file=L1VwbG9hZEZpbGVzL1BERl9DYXQvMjAyMjExMTUxNDQ4MDU0NTQucGRm&lan=en
 Inductor inductor mwsa-s
@@ -55415,34 +55429,6 @@ Inductor_SMD
 L_Wuerth_WE-TPC-3816
 L_Wuerth_WE-TPC-3816 StepUp generated footprint, http://katalog.we-online.de/pbs/datasheet/7440310047.pdf
 wurth wuerth smd inductor
-0
-2
-2
-Inductor_SMD_Wurth
-L_Wurth_WE-LQSH-2010
-Semi-Shielded High Saturation Power Inductor, body 2x1.6mm, https://www.we-online.com/catalog/en/WE-LQSH#/articles/WE-LQSH-2010
-SMT
-0
-2
-2
-Inductor_SMD_Wurth
-L_Wurth_WE-LQSH-2512
-Semi-Shielded High Saturation Power Inductor, body 2.5x2mm, https://www.we-online.com/catalog/en/WE-LQSH#/articles/WE-LQSH-2512
-SMT
-0
-2
-2
-Inductor_SMD_Wurth
-L_Wurth_WE-LQSH-3012
-Semi-Shielded High Saturation Power Inductor, body 3x3mm, https://www.we-online.com/catalog/en/WE-LQSH#/articles/WE-LQSH-3012
-SMT
-0
-2
-2
-Inductor_SMD_Wurth
-L_Wurth_WE-LQSH-4020
-Semi-Shielded High Saturation Power Inductor, body 4x4mm, https://www.we-online.com/catalog/en/WE-LQSH#/articles/WE-LQSH-4020
-SMT
 0
 2
 2
@@ -57252,76 +57238,6 @@ L_Toroid Vertical series Radial pin pitch 31.80mm  length 67.6mm width 36.1mm Vi
 0
 2
 2
-Inductor_THT_Wurth
-L_Wurth_WE-HCFT-2012_LeadDiameter1.2mm
-Shielded High Current Inductor, body 17x22mm, https://www.we-online.com/catalog/en/WE-HCFT#/articles/WE-HCFT-2012-ROUND
-THT
-0
-2
-2
-Inductor_THT_Wurth
-L_Wurth_WE-HCFT-2012_LeadDiameter1.5mm
-Shielded High Current Inductor, body 17x22mm, https://www.we-online.com/catalog/en/WE-HCFT#/articles/WE-HCFT-2012-ROUND
-THT
-0
-2
-2
-Inductor_THT_Wurth
-L_Wurth_WE-HCFT-2504
-Shielded High Current Inductor, body 22x25.7mm, https://www.we-online.com/catalog/en/WE-HCFT#/articles/WE-HCFT_SIZE_2504
-THT
-0
-2
-2
-Inductor_THT_Wurth
-L_Wurth_WE-HCFT-3521
-Shielded High Current Inductor, body 21.5x36mm, https://www.we-online.com/catalog/en/WE-HCFT#/articles/WE-HCFT-3521
-THT
-0
-4
-2
-Inductor_THT_Wurth
-L_Wurth_WE-HCFT-3533_LeadDiameter1.8mm
-Shielded High Current Inductor, body 34.5x36mm, https://www.we-online.com/catalog/en/WE-HCFT#/articles/WE-HCFT-3533-ROUND
-THT
-0
-4
-2
-Inductor_THT_Wurth
-L_Wurth_WE-HCFT-3533_LeadDiameter2.0mm
-Shielded High Current Inductor, body 34.5x36mm, https://www.we-online.com/catalog/en/WE-HCFT#/articles/WE-HCFT-3533-ROUND
-THT
-0
-4
-2
-Inductor_THT_Wurth
-L_Wurth_WE-HCFT-3540_LeadDiameter0.8mm
-Shielded High Current Inductor, body 41x36mm, https://www.we-online.com/catalog/en/WE-HCFT#/articles/WE-HCFT-3540
-THT
-0
-4
-2
-Inductor_THT_Wurth
-L_Wurth_WE-HCFT-3540_LeadDiameter1.3mm
-Shielded High Current Inductor, body 41x36mm, https://www.we-online.com/catalog/en/WE-HCFT#/articles/WE-HCFT-3540
-THT
-0
-4
-2
-Inductor_THT_Wurth
-L_Wurth_WE-HCFT-3540_LeadDiameter1.5mm
-Shielded High Current Inductor, body 41x36mm, https://www.we-online.com/catalog/en/WE-HCFT#/articles/WE-HCFT-3540
-THT
-0
-4
-2
-Inductor_THT_Wurth
-L_Wurth_WE-HCFT-3540_LeadDiameter2.0mm
-Shielded High Current Inductor, body 41x36mm, https://www.we-online.com/catalog/en/WE-HCFT#/articles/WE-HCFT-3540
-THT
-0
-4
-2
 Jumper
 SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm
 SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, bridged with 2 copper strips
@@ -57846,6 +57762,13 @@ OSRAM, reverse-mount LED, SMD, 2mm diameter, http://www.farnell.com/datasheets/2
 LED ReverseMount Reverse
 0
 4
+2
+LED_SMD
+LED_PLCC-2
+LED PLCC-2 SMD package
+LED PLCC-2 SMD
+0
+2
 2
 LED_SMD
 LED_PLCC-2_3.4x3.0mm_AK
@@ -58834,13 +58757,6 @@ ESP8266 WiFi microcontroller
 0
 16
 16
-Motors
-Vybronics_VZ30C1T8219732L
-Vibration motor, 2.3-3.2V, 14000rpm, 0.7G, https://www.vybronics.com/wp-content/uploads/datasheet-files/Vybronics-VZ30C1T8219732L-datasheet.pdf
-vibration motor Vybronics
-0
-12
-3
 MountingEquipment
 DINRailAdapter_3xM3_PhoenixContact_1201578
 https://www.phoenixcontact.com/online/portal/us?uri=pxc-oc-itemdetail:pid=1201578&library=usen&tab=1
@@ -61628,6 +61544,13 @@ PhotoDiode plastic SMD DIL
 6
 2
 OptoDevice
+Osram_SMD-DIL2_4.5x4.0mm
+PhotoDiode, plastic SMD DIL, 4.5x4mm²
+PhotoDiode plastic SMD DIL
+0
+2
+2
+OptoDevice
 Osram_SMD-SmartDIL
 PhotoDiode, plastic SMD SmatDIL
 PhotoDiode plastic SMD SmatDIL
@@ -63713,6 +63636,13 @@ LFCSP-WD NoLead
 0
 24
 11
+Package_CSP
+Maxim_WLCSP-32_3.0x2.17mm_Layout7x5_P0.4mm_Ball0.27mm_Pad0.25mm
+WLCSP-32, 2.168x2.998mm, 35 Ball, 7x5 Layout, 0.4mm Pitch, https://pdfserv.maximintegrated.com/package_dwgs/21-100489.PDF
+CSP 35 0.4
+0
+35
+35
 Package_CSP
 Maxim_WLCSP-35_3.0x2.17mm_Layout7x5_P0.4mm_Ball0.27mm_Pad0.25mm
 WLCSP-35, 2.168x2.998mm, 35 Ball, 7x5 Layout, 0.4mm Pitch, https://pdfserv.maximintegrated.com/package_dwgs/21-100489.PDF
@@ -67164,6 +67094,13 @@ ti rwh0032a
 0
 94
 33
+Package_DFN_QFN
+Texas_R_PUQFN-N12
+Texas_R_PUQFN-N12 http://www.ti.com/lit/ds/symlink/txb0104.pdf
+Texas_R_PUQFN-N12
+0
+13
+12
 Package_DFN_QFN
 Texas_S-PDSO-N10_EP1.2x2mm
 DFN, 10 Pin (http://www.ti.com/lit/ds/symlink/tps7a91.pdf#page=30), generated with kicad-footprint-generator ipc_noLead_generator.py
@@ -80394,6 +80331,83 @@ rotary encoder
 0
 7
 6
+SamacSys_Parts
+5534434
+553443-4-3
+Connector
+0
+54
+54
+SamacSys_Parts
+57490695
+5749069-5-2
+Connector
+0
+52
+52
+SamacSys_Parts
+95278501A10LF
+95278-501A10LF
+Connector
+0
+10
+10
+SamacSys_Parts
+472720029
+47272-0029-2
+Connector
+0
+24
+24
+SamacSys_Parts
+NE555DR
+D (R-PDSO-G8)
+Integrated Circuit
+0
+8
+8
+SamacSys_Parts
+SOIC127P600X175-16N
+SO-16
+Integrated Circuit
+0
+16
+16
+SamacSys_Parts
+SOP65P640X110-24N
+TSSOP24
+Integrated Circuit
+0
+24
+24
+SamacSys_Parts
+SOP65P640X120-16N
+PW0016A 2021
+Integrated Circuit
+0
+16
+16
+SamacSys_Parts
+SOTFL50P160X60-6N
+Package outline SOT666
+Schottky Diode
+0
+6
+6
+SamacSys_Parts
+WP7BP050VA1R8000
+WP7B-P050VA1-R8000-1
+Connector
+0
+54
+54
+SamacSys_Parts
+WP7BS050VA1R8000
+WP7B-S050VA1-R8000-1
+Connector
+0
+54
+54
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf
@@ -80401,6 +80415,13 @@ Temperature and humidity module
 0
 4
 4
+Sensor
+Avago_ADPS-9960
+Digital Proximity, Ambient Light, RGB and Gesture Sensor (https://docs.broadcom.com/doc/AV02-4191EN)
+DFN Sensor optical IR
+0
+8
+8
 Sensor
 Avago_APDS-9960
 Digital Proximity, Ambient Light, RGB and Gesture Sensor (https://docs.broadcom.com/doc/AV02-4191EN)
@@ -87527,3 +87548,192 @@ varistor
 0
 2
 2
+unl_silab
+1p6mmHole
+
+
+0
+0
+0
+unl_silab
+1p6mmHoleArray
+
+
+0
+0
+0
+unl_silab
+2x10_wirebond_pads_and_testpts
+
+
+0
+40
+20
+unl_silab
+ArduinoNanoEvery
+
+
+0
+30
+30
+unl_silab
+BM02B-SRSS-TB LFSN
+
+
+0
+4
+4
+unl_silab
+ETROC
+ETROC
+
+0
+47
+47
+unl_silab
+ETROC_70pad_61x126um_110um_pitch
+
+
+0
+70
+70
+unl_silab
+ETROC_70pad_100x150um_200um_pitch
+
+
+0
+70
+70
+unl_silab
+ETROC_91pad_120x200um_216p44um_pitch
+
+
+0
+91
+91
+unl_silab
+ETROC_Heater_Serpantine
+
+
+0
+2
+2
+unl_silab
+GEC02SBSN-M89
+
+
+0
+2
+2
+unl_silab
+HV-Pad
+
+
+0
+1
+1
+unl_silab
+Keystone-5084-Test-Point
+
+
+0
+1
+1
+unl_silab
+NLOGO
+
+
+0
+0
+0
+unl_silab
+PCB_ETROC2_dummy
+
+
+0
+18
+18
+unl_silab
+PCB_ETROC2_test
+
+
+0
+60
+60
+unl_silab
+ROC1_sans_wirebonds
+
+
+0
+100
+100
+unl_silab
+SMT_Nut_SMTSO-080-2ET
+
+
+0
+0
+0
+unl_silab
+TFPX_stencil_UNL_pattern
+
+
+0
+223
+0
+unl_silab
+TestPoint_Pad_D3.0mm
+SMD pad as test Point, diameter 3.0mm
+test point SMD pad
+0
+1
+1
+unl_silab
+coupon_single_side
+
+
+0
+1
+1
+unl_silab
+crossed_circle_fiducial
+
+
+0
+0
+0
+unl_silab
+etl_module_pcb_wirebond_staggered_v1
+
+
+0
+142
+142
+unl_silab
+etl_service_hybrid_mounting_holes
+
+
+0
+0
+0
+unl_silab
+etroc_mockup_wirebond_pads
+
+
+0
+47
+47
+unl_silab
+spring-pin_TE_2306334-3
+
+
+0
+1
+1
+unl_silab
+vacuum_clearance_hole
+
+
+0
+0
+0

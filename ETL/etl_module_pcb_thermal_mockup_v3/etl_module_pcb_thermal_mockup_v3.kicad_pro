@@ -34,8 +34,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.254,
-          "width": 0.127
+          "height": 1.0,
+          "width": 1.0
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -409,11 +409,9 @@
           "Net-(U1-Pad23)",
           "Net-(U1-Pad5)",
           "Net-(U2-Pad107)",
-          "Net-(U2-Pad117)",
           "Net-(U2-Pad12)",
           "Net-(U2-Pad23)",
           "Net-(U2-Pad5)",
-          "Net-(U2-Pad83)",
           "Net-(U3-Pad104)",
           "Net-(U3-Pad107)",
           "Net-(U3-Pad108)",
