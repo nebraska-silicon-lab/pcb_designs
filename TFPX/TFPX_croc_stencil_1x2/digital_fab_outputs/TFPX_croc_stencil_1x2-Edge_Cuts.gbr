@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,7.0.6*%
+%TF.CreationDate,2023-08-28T17:18:35-05:00*%
+%TF.ProjectId,TFPX_croc_stencil_1x2,54465058-5f63-4726-9f63-5f7374656e63,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 7.0.6) date 2023-08-28 17:18:35*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.100000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X102540000Y-82470000D02*
+X184020000Y-82470000D01*
+X184020000Y-117950000D01*
+X102540000Y-117950000D01*
+X102540000Y-82470000D01*
+M02*
