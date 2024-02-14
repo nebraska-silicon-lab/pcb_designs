@@ -2,6 +2,7 @@ import PySide6
 from __feature__ import true_property  # noqa
 import sys
 from collections import deque
+from datetime import datetime
 import PySide6.QtWidgets as qtw
 import PySide6.QtCharts as qtc
 from PySide6.QtSerialPort import QSerialPort, QSerialPortInfo
@@ -17,7 +18,10 @@ class MainWindow(qtw.QMainWindow):
         super().__init__()
         self.setWindowTitle("Howdy Doody")
 
-        self.measurement_data = {(i+1): deque([], maxlen=500) for i in range(8)}
+        self.measurement_data = {i: [] for i in ENABLED_CHANNELS}
+        self.measurement_counter = {i: 0 for i in ENABLED_CHANNELS}
+        self.measurements_pending = set()
+        self.run_start_time = None
 
         self.menu = self.menuBar()
         self.file_menu = self.menu.addMenu('File')
@@ -41,10 +45,12 @@ class MainWindow(qtw.QMainWindow):
 
         self.measure_button = qtw.QPushButton('Readout Channels')
         self.measure_button.clicked.connect(self.readout_adc)
+        self.measure_checkbox = qtw.QCheckBox('Continuous Readout')
 
         main_layout.addWidget(self.calibrate_button)
         main_layout.addWidget(self.reset_button)
         main_layout.addWidget(self.measure_button)
+        main_layout.addWidget(self.measure_checkbox)
 
         self.history_chart_view = qtc.QChartView()
         self.history_chart = qtc.QChart()
@@ -58,9 +64,15 @@ class MainWindow(qtw.QMainWindow):
             series.name = f'Channel {i}'
             self.history_chart_series[i] = series
             self.history_chart.addSeries(series)
+
         self.history_chart.createDefaultAxes()
 
         main_layout.addWidget(self.history_chart_view)
+
+        self.value_displays = {}
+        for i in ENABLED_CHANNELS:
+            self.value_displays[i] = qtw.QLabel()
+            main_layout.addWidget(self.value_displays[i])
 
         self.serial_display = qtw.QPlainTextEdit()
         self.serial_display.readOnly = True
@@ -140,21 +152,37 @@ class MainWindow(qtw.QMainWindow):
         if data.startswith('measure'):
             _, channel_id, value = data.split()
             channel_id = int(channel_id)
-            value = int(value, 16) / (2**24 - 1)
-            if value > self.history_chart_max:
-                self.history_chart_max = value
-            if value < self.history_chart_min:
-                self.history_chart_min = value
-            self.measurement_data[channel_id].append(value)
+            try:
+                self.measurements_pending.remove(channel_id)
+            except KeyError:
+                self.log(f"WARNING: Received unexpected measurement from device, {data}")
+            if self.measure_checkbox.checked:
+                self.readout_adc()
+            volts = 1.65 + (int(value, 16) / 2**23 - 1) * (1.024*1.65/1)
+            ohms = 47.5E3 / (3.3 / volts - 1)
+            dt_minutes = (datetime.now() - self.run_start_time).seconds / 60
+            if ohms > self.history_chart_max:
+                self.history_chart_max = ohms
+            if ohms < self.history_chart_min:
+                self.history_chart_min = ohms
+            self.measurement_counter[channel_id] += 1
+            idx = self.measurement_counter[channel_id]
+            self.measurement_data[channel_id].append((dt_minutes, ohms))
+            self.history_chart_series[channel_id].append(dt_minutes, ohms)
+            delta = ohms - self.measurement_data[channel_id][0][1]
+            self.value_displays[channel_id].text = f"Ch {channel_id}: {ohms:0.6f} {delta:0.6f}"
 
-            idx = len(self.measurement_data[channel_id])
-            self.history_chart_series[channel_id].append(idx, value)
-            self.history_chart.axes(Qt.Orientation.Horizontal)[0].setRange(0, idx+1)
+            n_points = 300
+            if idx > n_points:
+                self.history_chart_series[channel_id].remove(0)
+                self.measurement_data[channel_id].pop(0)
+            self.history_chart.axes(Qt.Orientation.Horizontal)[0].setRange(self.measurement_data[channel_id][0][0],
+                                                                           self.measurement_data[channel_id][-1][0])
             y_range = self.history_chart_max - self.history_chart_min
-            self.history_chart.axes(Qt.Orientation.Vertical)[0].setRange(self.history_chart_min - y_range*0.1,
-                                                                         self.history_chart_max + y_range*0.1)
-            # self.history_chart_view.repaint()
-            # self.history_chart.
+            # self.history_chart.axes(Qt.Orientation.Vertical)[0].setRange(self.history_chart_min - y_range*0.1,
+            #                                                              self.history_chart_max + y_range*0.1)
+            self.history_chart.axes(Qt.Orientation.Vertical)[0].setRange(700,
+                                                                         900)
 
     def start_calibrate(self):
         self.write_port('calibrate')
@@ -163,8 +191,12 @@ class MainWindow(qtw.QMainWindow):
         self.write_port('reset')
 
     def readout_adc(self):
+        if self.run_start_time is None:
+            self.run_start_time = datetime.now()
         for channel_id in ENABLED_CHANNELS:
-            self.write_port(f'measure {channel_id}')
+            if channel_id not in self.measurements_pending:
+                self.measurements_pending.add(channel_id)
+                self.write_port(f'measure {channel_id}')
 
 
 def main():

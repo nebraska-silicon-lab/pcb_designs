@@ -44,18 +44,18 @@
 #define ADC_CONTROL_RANGE_2p56V       0x07
 #define ADC_CONTROL_UNIPOLAR_ENCODING 0x08
 
-#define ADC_CONTROL_AIN1_PSEUDODIFFERENTIAL 0x0
-#define ADC_CONTROL_AIN2_PSEUDODIFFERENTIAL 0x1
-#define ADC_CONTROL_AIN3_PSEUDODIFFERENTIAL 0x2
-#define ADC_CONTROL_AIN4_PSEUDODIFFERENTIAL 0x3
-#define ADC_CONTROL_AIN5_PSEUDODIFFERENTIAL 0x4
-#define ADC_CONTROL_AIN6_PSEUDODIFFERENTIAL 0x5
-#define ADC_CONTROL_AIN7_PSEUDODIFFERENTIAL 0x6
-#define ADC_CONTROL_AIN8_PSEUDODIFFERENTIAL 0x7
-#define ADC_CONTROL_AIN1_DIFFERENTIAL       0x8
-#define ADC_CONTROL_AIN3_DIFFERENTIAL       0x9
-#define ADC_CONTROL_AIN5_DIFFERENTIAL       0xA
-#define ADC_CONTROL_AIN7_DIFFERENTIAL       0xB
+#define ADC_CONTROL_AIN1_PSEUDODIFFERENTIAL 0x00
+#define ADC_CONTROL_AIN2_PSEUDODIFFERENTIAL 0x10
+#define ADC_CONTROL_AIN3_PSEUDODIFFERENTIAL 0x20
+#define ADC_CONTROL_AIN4_PSEUDODIFFERENTIAL 0x30
+#define ADC_CONTROL_AIN5_PSEUDODIFFERENTIAL 0x40
+#define ADC_CONTROL_AIN6_PSEUDODIFFERENTIAL 0x50
+#define ADC_CONTROL_AIN7_PSEUDODIFFERENTIAL 0x60
+#define ADC_CONTROL_AIN8_PSEUDODIFFERENTIAL 0x70
+#define ADC_CONTROL_AIN1_DIFFERENTIAL       0x80
+#define ADC_CONTROL_AIN3_DIFFERENTIAL       0x90
+#define ADC_CONTROL_AIN5_DIFFERENTIAL       0xA0
+#define ADC_CONTROL_AIN7_DIFFERENTIAL       0xB0
 
 // Mode Register Flags
 #define MODE_CHOPB 0x80
@@ -147,6 +147,7 @@ unsigned long read_register(unsigned char addr, unsigned int size_bits) {
   }
   clk(); clk(); clk(); clk();
   clk(); clk(); clk(); clk();
+  delay(10);
   return value;
 }
 
@@ -179,6 +180,7 @@ void write_register(unsigned char addr, unsigned long value, unsigned int size_b
     mask = mask >> 1;
     clk();
   }
+  delay(10);
 }
 
 void calibrate_channel(unsigned char channel_flag, String channel_name){
@@ -187,18 +189,18 @@ void calibrate_channel(unsigned char channel_flag, String channel_name){
 
   write_register(REG_ADC_CONTROL, channel_flag | ADC_CONTROL_RANGE_2p56V, 8);
 
-  write_register(REG_MODE, MODE_REFSEL | MODE_ZERO_SCALE_CALIBRATION, 8);
+  write_register(REG_MODE, MODE_ZERO_SCALE_CALIBRATION, 8);
   while(true) {
     unsigned long mode_value = read_register(REG_MODE, 8);
-    Serial.printf("Mode A: %02x\n", mode_value);
+    // Serial.printf("Mode A: %02x\n", mode_value);
     if ((mode_value & 0x7) == MODE_IDLE) break;
     delay(10);
   }
 
-  write_register(REG_MODE, MODE_REFSEL | MODE_FULL_SCALE_CALIBRATION, 8);
+  write_register(REG_MODE, MODE_FULL_SCALE_CALIBRATION, 8);
   while(true) {
     unsigned long mode_value = read_register(REG_MODE, 8);
-    Serial.printf("Mode B: %02x\n", mode_value);
+    // Serial.printf("Mode B: %02x\n", mode_value);
     if ((mode_value & 0x7) == MODE_IDLE) break;
     delay(10);
   }
@@ -207,28 +209,26 @@ void calibrate_channel(unsigned char channel_flag, String channel_name){
 }
 
 unsigned long read_channel(unsigned char channel_id) {
-  write_register(REG_MODE, MODE_NEGBUF | MODE_REFSEL | MODE_CONTINUOUS_CONVERSION, 8);
+  // write_register(REG_MODE, MODE_NEGBUF | MODE_REFSEL | MODE_CONTINUOUS_CONVERSION, 8); <- REFSEL results in bad range, ie results are clamped.
+  write_register(REG_MODE, MODE_NEGBUF | MODE_CONTINUOUS_CONVERSION, 8);
+  // unsigned long mode_value = read_register(REG_MODE, 8);
+  // Serial.printf("mode:  %08x\n", mode_value);
   write_register(REG_ADC_CONTROL, ((channel_id - 1)<<4) | ADC_CONTROL_RANGE_2p56V, 8);
+  // unsigned long control_value = read_register(REG_ADC_CONTROL, 8);
+  // Serial.printf("control:  %08x\n", control_value);
 
 
   unsigned long try_count = 0;
   while (digitalRead(PIN_RDYB)) {
+    delay(10);
     try_count++;
-    if (try_count > 50000) {
+    if (try_count > 1000) {
       Serial.println("ERROR: Unable to read ADC value, timeout.");
       return 0;
     }
   }
-
-  // while(true) {
-  //   unsigned long status_value = read_register(REG_STATUS, 8);
-  //   if (status_value & STATUS_RDY) break;
-  //   try_count++;
-  //   if (try_count > 1000) {
-  //     Serial.println("ERROR: Unable to read ADC value, timeout.");
-  //     return 0;
-  //   }
-  // }
+  // unsigned long status = read_register(REG_STATUS, 8);
+  // Serial.printf("status:  %08x\n", status);
   unsigned long adc_value = read_register(REG_ADC_DATA, ADC_BITS_AD7718);
   return adc_value;
 }
@@ -283,7 +283,7 @@ void loop() {
   if (Serial.available() == 0) return;
 
   String line = Serial.readStringUntil('\n');
-  Serial.println(line);
+  // Serial.println(line);
   Command command = parse_command(line);
 
   if (command.cmd == "reset") {
@@ -298,7 +298,8 @@ void loop() {
         calibrate_channel(ADC_CONTROL_AIN5_PSEUDODIFFERENTIAL, "5"); delay(10);
         calibrate_channel(ADC_CONTROL_AIN6_PSEUDODIFFERENTIAL, "6"); delay(10);
         calibrate_channel(ADC_CONTROL_AIN7_PSEUDODIFFERENTIAL, "7"); delay(10);
-        calibrate_channel(ADC_CONTROL_AIN8_PSEUDODIFFERENTIAL, "8"); delay(10);
+        calibrate_channel(ADC_CONTROL_AIN8_PSEUDODIFFERENTIAL, "8");
+        Serial.println("CALIBRATION COMPLETE");
       } else if (command.nargs == 1) {
       long channel_id = command.args[0].toInt();
       if (channel_id < 1 || channel_id > 8) {
@@ -307,8 +308,6 @@ void loop() {
       }
       calibrate_channel((unsigned char)(channel_id-1), command.args[0]);
       }
-
-
   } else if (command.cmd == "measure") {
       long channel_id = command.args[0].toInt();
       if (channel_id < 1 || channel_id > 8) {
@@ -316,33 +315,49 @@ void loop() {
         return;
       }
       unsigned long value = read_channel(channel_id);
-      Serial.printf("  %08x\n", value);
+      Serial.printf("measure %d %08x\n", channel_id, value);
   } else if (command.cmd == "status") {
       unsigned long value = read_register(REG_STATUS, 8);
-      Serial.printf("  %08x\n", value);
+      Serial.printf("status  %08x\n", value);
   } else if (command.cmd == "mode") {
       if (command.nargs > 0) {
         write_register(REG_MODE, hex2char(command.args[0]), 8);
       }
       unsigned long value = read_register(REG_MODE, 8);
-      Serial.printf("  %08x\n", value);
+      Serial.printf("mode  %08x\n", value);
   } else if (command.cmd == "control") {
       if (command.nargs > 0) {
         write_register(REG_ADC_CONTROL, hex2char(command.args[0]), 8);
       }
       unsigned long value = read_register(REG_ADC_CONTROL, 8);
-      Serial.printf("  %08x\n", value);
+      Serial.printf("control  %08x\n", value);
   } else if (command.cmd == "iocontrol") {
       if (command.nargs > 0) {
         write_register(REG_IO_CONTROL, hex2char(command.args[0]), 8);
       }
       unsigned long value = read_register(REG_IO_CONTROL, 8);
-      Serial.printf("  %08x\n", value);
+      Serial.printf("iocontrol  %08x\n", value);
   } else if (command.cmd == "filter") {
       if (command.nargs > 0) {
         write_register(REG_FILTER, hex2char(command.args[0]), 8);
       }
       unsigned long value = read_register(REG_FILTER, 8);
       Serial.printf("  %08x\n", value);
+  } else if (command.cmd == "data") {
+      unsigned long value = read_register(REG_ADC_DATA, 24);
+      float ratio = (float) value / (float) 0xFFFFFF;
+      Serial.printf("data  %08x, %.2f\n", value, ratio);
+  } else if (command.cmd == "offset") {
+      unsigned long value = read_register(REG_ADC_OFFSET, 24);
+      Serial.printf("offset  %08x\n", value);
+  } else if (command.cmd == "gain") {
+      unsigned long value = read_register(REG_ADC_GAIN, 24);
+      Serial.printf("gain  %08x\n", value);
+  } else if (command.cmd == "id") {
+      if (command.nargs > 0) {
+        write_register(REG_ID, hex2char(command.args[0]), 8);
+      }
+      unsigned long value = read_register(REG_ID, 8);
+      Serial.printf("id  %08x\n", value);
   }
 }
